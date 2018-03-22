@@ -15,3 +15,13 @@ $(document).ready(function() {
 
 var scene = document.getElementById('scene');
 var parallax = new Parallax(scene);
+
+// MASONRY JS
+
+$('.grid').masonry({
+  // Options
+  itemSelector: '.grid-item',
+  columnWidth: 120,
+  fitWidth: true,
+  gutter: 0
+});
