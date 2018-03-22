@@ -10,8 +10,10 @@
     <!--<meta property="og:site_name" content="" />-->
     <!--<meta property="og:description" content="" />-->
     <title>Fred Lefevre</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script defer src="scripts/fontawesome-all.min.js"></script>
     <!--[if lt IE 9]>
             <script src="scripts/html5shiv.min.js"></script>
         <![endif]-->
@@ -19,31 +21,46 @@
 
 <body>
 
-    <section class="main" id="home">
+    <section class="cover-main" id="home">
       <header>
         <nav>
           <ul class="menu">
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">My Work</a></li>
-            <li><a href="#">Contact</a></li>
+            <span class="left">
+              <li><a href="#"><i class="fab fa-github"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </span>
+            <span class="right">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">My Work</a></li>
+              <li><a href="#">About</a></li>
+            </span>
           </ul>
         </nav>
       </header>
+      <div class="wrapper">
+        <ul id="scene"
+          data-invert-x="false"
+              data-invert-y="false"
+              data-scalar-x="7"
+              data-scalar-y="7"
+              data-friction-x="0.1"
+              data-friction-y="0.1"
+              data-origin-x="0.5"
+              data-origin-y="0.5">
+            <li class="layer name" data-depth="0.90">Fred Lefevre</li>
+            <li class="layer title" data-depth="0.50">Web Developer</li>
+            <!-- <li class="layer btn btn-main" data-depth="0.30">
+              <a href="#" class="portfolio-btn">View Portfolio</a>
+              <a href="#" class="contact-btn">Contact Me</a>
+            </li> -->
+        </ul>
+      </div>
     </section>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="scripts/parallax.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
