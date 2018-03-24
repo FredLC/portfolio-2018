@@ -323,21 +323,102 @@ ul#scene li.title {
   height: 680px;
 }
 
-h2.subtitle {
+h1.portfolio-header {
   position: relative;
   display: block;
-  margin: 70px auto;
+  margin: 50px auto 90px auto;
   text-align: center;
-  font-size: 35px;
-  line-height: 40px;
+  font-size: 50px;
+  line-height: 55px;
   font-weight: bold;
 }
 
-h2.subtitle::after {
+h1.portfolio-header::after {
   display: block;
   height: 2px;
   background: black;
   margin: 30px auto 0 auto;
   width: 100px;
   content: "";
+}
+
+.portfolio {
+  text-align: center;
+  padding: 5em 0;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 60em;
+  margin: auto;
+}
+
+.portfolio-desc {
+  display: none;
+}
+
+.portfolio-item.featured  .portfolio-desc {
+  display: block;
+}
+
+.portfolio-item {
+  width: 50%;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  padding: 0;
+}
+
+.portfolio-item.featured {
+  width: 100%;
+  order: -1;
+}
+
+.portfolio-item img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding:0;
+  max-width: 100%;
+}
+
+.portfolio-item figcaption {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  transition: top ease-in-out 250ms;
+}
+
+.portfolio-item:hover figcaption,
+.portfolio-item:focus figcaption {
+  top: 0;
+}
+
+.portfolio-title {
+  font-size: 1.5em;
+  margin-bottom: auto;
+}
+
+.portfolio-item.featured .portfolio-title {
+  font-size: 4em;
+}
+
+.portfolio-link {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  align-self: flex-start;
 }
