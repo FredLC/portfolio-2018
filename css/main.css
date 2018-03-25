@@ -583,3 +583,37 @@ footer h1 {
   width: 800px;
   z-index: 1;
 }
+
+/* ABOUT SECTION */
+
+.about {
+  height: 60vh;
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: 1px solid #EFECEC;
+}
+
+.my-picture {
+  width: 280px;
+  height: 260px;
+  border-radius: 100%;
+  margin-left: 25%;
+  margin-top: 8%;
+}
+
+.about-left {
+  width: 50%;
+}
+
+.about-right {
+  width: 50%;
+}
+
+.about h1 {
+  font-size: 2em;
+  line-height: 1.5;
+  padding: 2em;
+  font-style: italic;
+  margin-left: 10%;
+}
