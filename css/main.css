@@ -631,4 +631,57 @@ footer h1 {
     right: 10px;
     top: 15px;
   }
+
+  .main-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    background: rgba(0,0,0,0.72);
+    display: none;
+  }
+
+  .main-overlay::after {
+    background: url('../images/close-icon.svg') no-repeat center / cover;
+    display: block;
+    width: 35px;
+    height: 35px;
+    content: "";
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 20;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #131313;
+    width: 100%;
+    max-width: 300px;
+    z-index: 30;
+    transform: translate3d(-100%, 0, 0);
+    transition: 1s;
+  }
+
+  nav ul li  {
+    padding: 20px;
+  }
+
+  body.menu-is-active .menu {
+    transform: translate3d(0,0,0);
+  }
+
+  body.menu-is-active .main-overlay {
+    display: block;
+  }
+
+  body.menu-is-active .menu-trigger {
+    display: none;
+  }
+
 }
