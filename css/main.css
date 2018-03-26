@@ -589,9 +589,10 @@ footer h1 {
 .about {
   height: 60vh;
   display: flex;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  /* margin-top: 10%;
+  margin-bottom: 10%; */
   border: 1px solid #EFECEC;
+  margin: 10% auto 5%;
 }
 
 .my-picture {
@@ -619,6 +620,30 @@ footer h1 {
 }
 
 /* MEDIA QUERIES */
+
+@media only screen and (min-width: 1000px) {
+  .about h1 {
+    margin-left: 20%;
+  }
+
+  .my-picture {
+    margin-left: 35%;
+    width: 320px;
+    height: 300px;
+  }
+
+  ul#scene li.name {
+    font-size: 70px;
+    line-height: 75px;
+    margin-top: 15%;
+  }
+
+  ul#scene li.title {
+    font-size: 55px;
+    line-height: 60px;
+  }
+
+}
 
 @media only screen and (max-width: 768px) {
   .menu-trigger {
