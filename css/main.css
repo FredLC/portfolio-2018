@@ -617,3 +617,18 @@ footer h1 {
   font-style: italic;
   margin-left: 10%;
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px) {
+  .menu-trigger {
+    background: url('../images/hamburger-icon.svg') no-repeat center / cover;
+    width: 35px;
+    height: 35px;
+    display: block;
+    z-index: 10;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+}

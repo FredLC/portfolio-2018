@@ -8,6 +8,20 @@ $(document).ready(function() {
     var scrollFromTop = $(window).scrollTop();
     $("body").toggleClass("scroll", (scrollFromTop > 350));
   });
+
+  // SMOOTH SCROLLING
+
+  $('.menu li a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    var target = $(this.hash);
+
+    if (target.length) {
+      e.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top - 100
+      }, 1000);
+    }
+  });
 });
 
 

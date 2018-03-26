@@ -21,6 +21,8 @@
 
 <body>
 
+  <div class="main-overlay js-main-overlay"></div>
+
     <section class="cover-main" id="home">
       <header>
         <nav>
@@ -30,13 +32,14 @@
               <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
             </span>
             <span class="right">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">My Work</a></li>
-              <li><a href="#">About Me</a></li>
-              <li><a href="#">Contact Me</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#work">My Work</a></li>
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#contact">Contact Me</a></li>
             </span>
           </ul>
         </nav>
+        <div class="menu-trigger js-menu-trigger"></div>
       </header>
       <div class="wrapper">
         <ul id="scene"
@@ -75,7 +78,7 @@
        </div>
     </section>  -->
 
-    <section class="portfolio">
+    <section class="portfolio" id="work">
       <h1 class="portfolio-header">My Work</h1>
       <div class="portfolio-items">
 
@@ -183,7 +186,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-left">
         <h1>I'm a web developer who specializes in front-end and React apps. My passion
           is to create beautiful, user-centered websites.
@@ -194,7 +197,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h1>Contact me</h1>
         <form action="">
           <label class="name">Name:
